@@ -6,8 +6,10 @@ $bgreen: #5ae9cb
   margin: 0 auto
   padding: 0 2em
 .white
-  background-color: white
-
+  background-color: #fff
+.list-services
+  background-color: rgba(#ffffff, 0.75)
+  color: black
 body
   background: $frost
   box-sizing: border-box
@@ -41,7 +43,7 @@ body
         transition: all 0.3s ease
   #chatsworth-dental-carousel
     padding: 0
-    box-shadow: 0px 5px 10px black
+    box-shadow: 0px 15px 30px black
     .carousel-inner
       .carousel-images
         width: 100vw
@@ -50,6 +52,9 @@ body
     #testimonials
       padding-top: 5em
       padding-bottom: 4em
+      background: linear-gradient(to top right, rgba(252, 252, 252, 0.85), rgba(252, 252, 252, 0.85)),  url(../images/dentist-chair.jpg)
+        size: cover
+        attachment: fixed
       .testimonials
         position: relative
         z-index: 3
@@ -82,9 +87,23 @@ body
           opacity: .45
         .patient-name
           position: relative
+        .testimonial
+          background-color: white
+          border: 1px solid black
+          padding: 2.5em 1.75em
+          box-shadow: 0px 0px 10px black
+        .testimonial-customer
+          border: 1px solid black
+          color: white
+          text-shadow: 1px 1px 1px $orange
+          margin-top: .5em
+          padding: .5em .7em
+          background-color: rgba(#2cb3d1, 0.77)
+          box-shadow: 0px 3px 10px black
+          border-radius: 0px 0px 5px 5px
     #services
-      padding-top: 4.25em
-      padding-bottom: 4.25em
+      padding-top: 5.25em
+      padding-bottom: 5.25em
       color: white
       #services-image
         position: relative
@@ -99,6 +118,10 @@ body
         .listed-services
           padding-left: 15px
           padding-right: 15px
+          .tooth-heart
+            padding: .5em
+          span
+            font-size: 1.2em
 
 .shrink
   background: linear-gradient(to bottom, rgba(#2980b9, 0.95), transparent)!important

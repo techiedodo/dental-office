@@ -13,11 +13,11 @@ $(document).ready(function(){
       $('nav').removeClass('shrink');
     };
 
-    if(wScroll > 100 ) {
+    if(wScroll > $('.top-row').offset().top - ($(window).height() / 1.25)  ) {
       $('.testimonials').each(function(i){
         setTimeout(function(){
           $('.testimonials').eq(i).addClass('is-showing');
-        }, 550 * (i+1));
+        }, 650 * (i+1));
       });
     };
 
