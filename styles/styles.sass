@@ -1,6 +1,8 @@
 $frost: linear-gradient(65deg, #aed7f3 , #124679, #aed7f3)
 $orange: #f1912a
 $bgreen: #5ae9cb
+h2, h3
+  font-family: 'Catamaran', sans-serif
 .wrapper
   max-width: 1150px
   margin: 0 auto
@@ -11,7 +13,9 @@ $bgreen: #5ae9cb
   background-color: rgba(#ffffff, 0.75)
   color: black
 hr
-  width: 20em
+  width: 50em
+.content-title
+  padding-bottom: .5em
 
 body
   background: $frost
@@ -79,7 +83,7 @@ body
       background-color: white
       height: 80vh
       .image-1
-        background: url(../images/staff-image.jpg) no-repeat center center
+        background: url(../images/mother-daughter-smile.jpg) no-repeat center center
           size: cover
         height: 80vh
       .image-2
@@ -153,13 +157,13 @@ body
           border: 1px solid black
           color: white
           text-shadow: 1px 1px 1px $orange
-          margin-top: .5em
+          margin-top: .25em
           padding: .5em .7em
           background-color: rgba(#2cb3d1, 0.77)
           box-shadow: 0px 3px 10px black
           border-radius: 0px 0px 5px 5px
     #services
-      padding-top: 8.25em
+      padding-top: 7.5em
       padding-bottom: 5.25em
       color: white
       .services-video-section
@@ -174,10 +178,23 @@ body
         padding-left: 15px
         padding-right: 15px
         .tooth-heart
-          padding: .5em
+          padding: 0 .5em
         span
           font-size: 1.2em
-
+    #team
+      color: white
+      p
+        font-size: 1.2em
+      #staff-image
+        padding-top: 3em
+        padding-bottom: 2.5em
+        width: 100%
+        img
+          width: 100%
+          border-radius: .25em .25em 1em 1em
+          border: 1px solid white
+      .mishra-dr
+        width: 15em
 .shrink
   background: linear-gradient(to bottom, rgb(234, 125, 7), transparent)!important
   border: 0px solid red!important
