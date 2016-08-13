@@ -28,32 +28,41 @@ body
     height: 5em
     transition: all 0.9s ease
     font-family: 'Montserrat', sans-serif
-    .navbar-brand
-      padding: 0
-      #logo
-        width: 10em
-        opacity: .95
-        transition: all 0.3s ease
-        padding-bottom: .75em
-      #brand-name
-        position: relative
-        left: -5em
-        color: white
-        font-size: 1.4em
-        text-shadow: 2px 3px 2px black
-        transition: all 0.3s ease!important
-    .collapse
-      height: 100%
-      ul li a
-        height: 6em
-        padding: 2em .75em 1em .75em
-        transition: all 0.3s ease
-        text-shadow: 1px 1px 1px white
-        transition: all 0.3s ease
-      .active a
-        background-color: rgba(214, 214, 214, 0.75)
-        border-bottom: 8px solid white
-        transition: all 0.4s ease
+    .navbar-header
+      width: 30em
+      .collapsed, .navbar-toggle
+        position: absolute
+        z-index: 100000
+        right: 2em
+        .icon-bar
+          background-color: white
+      .navbar-brand
+        padding: 0
+        width: 29em
+        #logo
+          width: 10em
+          opacity: .95
+          transition: all 0.3s ease
+          padding-bottom: .75em
+        #brand-name
+          position: relative
+          left: -5em
+          color: white
+          font-size: 1.4em
+          text-shadow: 2px 3px 2px black
+          transition: all 0.3s ease!important
+      .collapse
+        height: 100%
+        ul li a
+          height: 6em
+          padding: 2em .75em 1em .75em
+          transition: all 0.3s ease
+          text-shadow: 1px 1px 1px white
+          transition: all 0.3s ease
+        .active a
+          background-color: rgba(214, 214, 214, 0.75)
+          border-bottom: 8px solid white
+          transition: all 0.4s ease
   #chatsworth-dental-carousel
     padding: 0
     box-shadow: 0px 15px 30px black
@@ -98,15 +107,14 @@ body
         width: 100vw
         height: 80vh
       .carousel-caption
-        bottom: 35%
-        font-family: 'Bilbo Swash Caps', cursive
+        bottom: 10em
         padding: 0
         h2
           font-size: 4em
         h3
           font-size: 2.5em
       #first-caption
-        bottom: 10%
+        bottom: 7em
         h3
           margin: 0
   .container-fluid
@@ -183,11 +191,12 @@ body
           font-size: 1.2em
     #team
       color: white
+      padding-bottom: 4em
       p
         font-size: 1.2em
       #staff-image
         padding-top: 3em
-        padding-bottom: 2.5em
+        padding-bottom: 3em
         width: 100%
         img
           width: 100%
@@ -196,8 +205,7 @@ body
       .mishra-dr
         width: 15em
 .shrink
-  background: linear-gradient(to bottom, rgb(234, 125, 7), transparent)!important
-  border: 0px solid red!important
+  background: rgba(23, 110, 145, .85)!important
   transition: all 0.9s ease!important
   #brand-name
     left: -5em!important
