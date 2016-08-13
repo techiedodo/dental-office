@@ -14,6 +14,8 @@ h2, h3
   color: black
 hr
   max-width: 50em
+  margin-top: 2.5em
+  margin-bottom: 2.5em
 .content-title
   padding-bottom: .5em
 
@@ -51,18 +53,21 @@ body
           font-size: 1.4em
           text-shadow: 2px 3px 2px black
           transition: all 0.3s ease!important
-      .collapse
-        height: 100%
-        ul li a
-          height: 6em
-          padding: 2em .75em 1em .75em
-          transition: all 0.3s ease
-          text-shadow: 1px 1px 1px white
-          transition: all 0.3s ease
-        .active a
-          background-color: rgba(214, 214, 214, 0.75)
-          border-bottom: 8px solid white
-          transition: all 0.4s ease
+    .collapse
+      height: 100%
+      ul li a
+        height: 6em
+        color: white
+        padding: 2em .75em 1em .75em
+        transition: all 0.3s ease
+        text-shadow: 1px 1px 1px black
+        transition: all 0.3s ease
+      .active a
+        background-color: rgba(214, 214, 214, 0.75)
+        color: black
+        text-shadow: 1px 1px 1px white
+        border-bottom: 8px solid white
+        transition: all 0.4s ease
   #chatsworth-dental-carousel
     padding: 0
     box-shadow: 0px 15px 30px black
@@ -174,6 +179,9 @@ body
       padding-top: 7.5em
       padding-bottom: 5.25em
       color: white
+      p
+        font-size: 1.2em
+        line-height: 1.8em
       .services-video-section
         padding-bottom: 2em
         #services-image
@@ -185,10 +193,12 @@ body
       .listed-services
         padding-left: 15px
         padding-right: 15px
-        .tooth-heart
-          padding: 0 .5em
-        span
-          font-size: 1.2em
+        .col-services
+          padding-top: 1.3em
+          .tooth-heart
+            padding: 0 .5em
+          span
+            font-size: 1.2em
     #team
       color: white
       padding-bottom: 4em
