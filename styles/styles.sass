@@ -1,6 +1,8 @@
-$frost: linear-gradient(65deg, #2C3E50 , #4CA1AF)
+$frost: linear-gradient(65deg, #aed7f3 , #124679, #aed7f3)
 $orange: #f1912a
 $bgreen: #5ae9cb
+h2, h3
+  font-family: 'Catamaran', sans-serif
 .wrapper
   max-width: 1150px
   margin: 0 auto
@@ -11,7 +13,11 @@ $bgreen: #5ae9cb
   background-color: rgba(#ffffff, 0.75)
   color: black
 hr
-  width: 20em
+  max-width: 50em
+  margin-top: 2.5em
+  margin-bottom: 2.5em
+.content-title
+  padding-bottom: .5em
 
 body
   background: $frost
@@ -24,30 +30,42 @@ body
     height: 5em
     transition: all 0.9s ease
     font-family: 'Montserrat', sans-serif
-    .navbar-brand
-      padding: 0
-      #logo
-        width: 10em
-        opacity: .95
-        transition: all 0.3s ease
-        padding-bottom: .75em
-      #brand-name
-        position: relative
-        left: -5em
-        color: white
-        font-size: 1.4em
-        text-shadow: 2px 3px 2px black
-        transition: all 0.3s ease!important
+    .navbar-header
+      width: 30em
+      .collapsed, .navbar-toggle
+        position: absolute
+        z-index: 100000
+        right: 2em
+        .icon-bar
+          background-color: white
+      .navbar-brand
+        padding: 0
+        width: 29em
+        #logo
+          width: 10em
+          opacity: .95
+          transition: all 0.3s ease
+          padding-bottom: .75em
+        #brand-name
+          position: relative
+          left: -5em
+          color: white
+          font-size: 1.4em
+          text-shadow: 2px 3px 2px black
+          transition: all 0.3s ease!important
     .collapse
       height: 100%
       ul li a
         height: 6em
+        color: white
         padding: 2em .75em 1em .75em
         transition: all 0.3s ease
-        text-shadow: 1px 1px 1px white
+        text-shadow: 1px 1px 1px black
         transition: all 0.3s ease
       .active a
         background-color: rgba(214, 214, 214, 0.75)
+        color: black
+        text-shadow: 1px 1px 1px white
         border-bottom: 8px solid white
         transition: all 0.4s ease
   #chatsworth-dental-carousel
@@ -79,7 +97,7 @@ body
       background-color: white
       height: 80vh
       .image-1
-        background: url(../images/staff-image.jpg) no-repeat center center
+        background: url(../images/mother-daughter-smile.jpg) no-repeat center center
           size: cover
         height: 80vh
       .image-2
@@ -94,15 +112,14 @@ body
         width: 100vw
         height: 80vh
       .carousel-caption
-        bottom: 35%
-        font-family: 'Bilbo Swash Caps', cursive
+        bottom: 10em
         padding: 0
         h2
           font-size: 4em
         h3
           font-size: 2.5em
       #first-caption
-        bottom: 10%
+        bottom: 7em
         h3
           margin: 0
   .container-fluid
@@ -153,15 +170,18 @@ body
           border: 1px solid black
           color: white
           text-shadow: 1px 1px 1px $orange
-          margin-top: .5em
+          margin-top: .25em
           padding: .5em .7em
           background-color: rgba(#2cb3d1, 0.77)
           box-shadow: 0px 3px 10px black
           border-radius: 0px 0px 5px 5px
     #services
-      padding-top: 8.25em
+      padding-top: 7.5em
       padding-bottom: 5.25em
       color: white
+      p
+        font-size: 1.2em
+        line-height: 1.8em
       .services-video-section
         padding-bottom: 2em
         #services-image
@@ -173,14 +193,29 @@ body
       .listed-services
         padding-left: 15px
         padding-right: 15px
-        .tooth-heart
-          padding: .5em
-        span
-          font-size: 1.2em
-
+        .col-services
+          padding-top: 1.3em
+          .tooth-heart
+            padding: 0 .5em
+          span
+            font-size: 1.2em
+    #team
+      color: white
+      padding-bottom: 4em
+      p
+        font-size: 1.2em
+      #staff-image
+        padding-top: 3em
+        padding-bottom: 3em
+        width: 100%
+        img
+          width: 100%
+          border-radius: .25em .25em 1em 1em
+          border: 1px solid white
+      .mishra-dr
+        width: 15em
 .shrink
-  background: linear-gradient(to bottom, rgb(234, 125, 7), transparent)!important
-  border: 0px solid red!important
+  background: rgba(23, 110, 145, .85)!important
   transition: all 0.9s ease!important
   #brand-name
     left: -5em!important
