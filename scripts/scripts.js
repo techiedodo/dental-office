@@ -1,8 +1,3 @@
-$(".nav a").on("click", function() {
-    $(".nav").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
-});
-
 $(document).ready(function() {
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
@@ -22,18 +17,25 @@ $(document).ready(function() {
         };
     });
 
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 20
-                    }, 600);
-                    return false;
-                }
-            }
-        });
+    $('body').scrollspy({
+        target: '#dental-navbar-collapse',
+        offset: 100
+    });
+    $('[data-spy="scroll"]').each(function() {
+        var $spy = $(this).scrollspy('refresh')
+    });
+
+    $('#dental-navbar-collapse a').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 50
+            }, 500, function() {
+                window.location.hash = hash;
+            })
+        };
     });
 });
