@@ -134,6 +134,7 @@ body
         attachment: fixed
       .testimonials
         position: relative
+        padding-bottom: 10px
         z-index: 3
         color: black
         text-shadow: 1px 1px 2px $bgreen
@@ -182,9 +183,6 @@ body
       padding-top: 7.5em
       padding-bottom: 5.25em
       color: white
-      // p
-      //   font-size: 1.2em
-      //   line-height: 1.8em
       .services-video-section
         padding-bottom: 2em
         #services-image
@@ -205,8 +203,6 @@ body
     #team
       color: white
       padding-bottom: 4em
-      // p
-      //   font-size: 1.2em
       #staff-image
         padding-top: 3em
         padding-bottom: 3em
@@ -244,6 +240,8 @@ body
       color: $orange
       font-size: 1.2em
       text-shadow: black 0px 1px 1px
+    ul
+      padding: 0
 .shrink
   background: rgba(23, 110, 145, .85)!important
   transition: all 0.9s ease!important
@@ -258,3 +256,48 @@ body
       height: 5em!important
       padding: 1.5em 1em 1em 1em!important
       transition: all 0.3s ease!important
+
+
+@media screen and (max-width: 415px)
+  hr
+    margin-top: 1.5em
+    margin-bottom: 1.5em
+  body
+    #chatsworth-dental-carousel
+      .carousel-caption
+        bottom: 9em
+        line-height: 1.5
+        h2
+          font-size: 1.75em
+          span
+            font-size: 1.3em
+    #main-nav
+      #brand-name
+        font-size: .8em!important
+        left: -10em!important
+    #services
+      .col-services
+        .col-xs-12
+          padding-right: 10px
+          padding-left: 10px
+          p
+            font-size: .9em
+
+@media screen and (max-height: 415px)
+  hr
+    margin-top: 1.5em
+    margin-bottom: 1.5em
+  body
+    #chatsworth-dental-carousel
+      .carousel-caption
+        bottom: 8em
+        line-height: 1.5
+        h2
+          font-size: 1.75em
+          span
+            font-size: 1.3em
+    #services
+      .col-services
+        p
+          font-size: .9em
+          text-align: center
