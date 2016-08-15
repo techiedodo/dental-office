@@ -15,7 +15,16 @@ $(document).ready(function() {
                 }, 650 * (i + 1));
             });
         };
+
+        if (wScroll > $('#contact').offset().top - ($(window).height() / 1.25)) {
+            $('.contact-section').each(function(i) {
+                setTimeout(function() {
+                    $('.contact-section').eq(i).addClass('is-showing');
+                }, 650 * (i + 1));
+            });
+        };
     });
+
 
     $('body').scrollspy({
         target: '#dental-navbar-collapse',
