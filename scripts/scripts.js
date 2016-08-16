@@ -61,7 +61,7 @@ $(document).ready(function() {
         formdata.append("patientEmail", _("patientEmail").value);
         formdata.append("patientMessage", _("patientMessage").value);
         var ajax = new XMLHttpRequest();
-        ajax.open("POST", "../php/message_parser.php");
+        ajax.open("POST", "php/message_parser.php");
         ajax.onreadystatechange = function() {
             if (ajax.readyState == 4 && ajax.status == 200) {
                 if (ajax.responseText == "success") {
