@@ -230,21 +230,29 @@
           <p>For questions about our patient information forms, please contact us and we will happily answer any questions you may have.</p>
         </div>
         <div class="col-sm-5 col-md-5 contact-section">
-          <form id="myForm" onsubmit="submitForm(); return false;">
+          <form id="contact-form" method="post" action="contact.php" role="form">
             <h3>If you have any questions, please feel free to contact us. We are here to help.</h3>
+
+            <div class="messages"></div>
+
             <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text" class="form-control" id="patientName" placeholder="Please enter your name" required>
+              <input type="text" name="name" class="form-control" id="patientName" placeholder="Please enter your name *" required="required" data-error="Please enter name.">
+              <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" class="form-control" id="patientEmail" placeholder="Email" required>
+              <input type="email" name="email" class="form-control" id="patientEmail" placeholder="Email *" required="required" data-error="Please enter email.">
+              <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
-              <textarea id="patientMessage" class="form-control" rows="4" placeholder="Enter message/comment" required></textarea>
+              <textarea id="patientMessage" name="message" class="form-control" rows="4" placeholder="Enter message/comment *" required="required" data-error="Please leave a message."></textarea>
+              <div class="help-block with-errors"></div>
             </div>
-            <button id="mybtn" type="submit" class="btn btn-primary btn-sm">Submit</button>
-            <span id="status"></span>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-sm" value="Send Message">
+              <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
           </form>
         </div>
       </div>
@@ -279,6 +287,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="scripts/scripts.js"></script>
+  <script src="scripts/contact.js"></script>
 </body>
 
 </html>
