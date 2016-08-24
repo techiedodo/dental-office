@@ -1,10 +1,10 @@
 $frost: linear-gradient(65deg, #aed7f3 , #124679, #aed7f3)
 $orange: #f1912a
-$bgreen: #5ae9cb
+$bgreen: rgba(140, 195, 184, 0.8)
 h2, h3
   font-family: 'Catamaran', sans-serif
 .wrapper
-  max-width: 1150px
+  max-width: 1175px
   margin: 0 auto
   padding: 0 2em
 .white
@@ -36,12 +36,15 @@ body
     font-family: 'Montserrat', sans-serif
     .navbar-header
       width: 30em
-      .collapsed, .navbar-toggle
+      .icon-bar
+        background-color: white
+      .navbar-toggle
         position: absolute
         z-index: 100000
-        right: 2em
-        .icon-bar
-          background-color: white
+        right: 0em
+        top: 15%
+
+
       .navbar-brand
         padding: 0
         width: 29em
@@ -52,9 +55,10 @@ body
           padding-bottom: .75em
         #brand-name
           position: relative
-          left: -5em
+          top: 50%
+          // left: -5em
           color: white
-          font-size: 1.4em
+          font-size: 2em
           text-shadow: 2px 3px 2px black
           transition: all 0.3s ease!important
     .collapse
@@ -101,15 +105,15 @@ body
       background-color: white
       height: 80vh
       .image-1
-        background: url(../images/mother-daughter-smile.jpg) no-repeat center center
+        background: url(../images/Happy-Smile.jpg) no-repeat center center
           size: cover
         height: 80vh
       .image-2
-        background: url(../images/family-street-smile.jpg) no-repeat center center
+        background: url(../images/Smiling-Girl.jpg) no-repeat center center
           size: cover
         height: 80vh
       .image-3
-        background: url(../images/kid-smile.jpg) no-repeat center center
+        background: url(../images/Happy_Couple.jpg) no-repeat center center
           size: cover
         height: 80vh
       .carousel-images
@@ -219,7 +223,7 @@ body
         attachment: fixed
       padding-top: 3em
       padding-bottom: 3em
-      color: #0e63ad
+      color: #015196
       border-bottom: 1px solid white
       .contact-section
         transform: translate(-20px, -30px)
@@ -231,9 +235,12 @@ body
   footer
     color: white
     margin-top: 3.25em
+    ul
+      list-style: none
+      font-size: 1.1em
     img
       padding: .5em
-      height: 4em
+      height: 3.5em
     h6
       padding-bottom: 1em
     h6 a
@@ -246,7 +253,7 @@ body
   background: rgba(23, 110, 145, .85)!important
   transition: all 0.9s ease!important
   #brand-name
-    left: -5em!important
+    left: -.5em!important
     transition: all 0.3s ease!important
   #logo
     width: 7em!important
@@ -263,6 +270,8 @@ body
     margin-top: 1.5em
     margin-bottom: 1.5em
   body
+    p
+      font-size: 1em
     #chatsworth-dental-carousel
       .carousel-caption
         bottom: 9em
@@ -274,7 +283,11 @@ body
     #main-nav
       #brand-name
         font-size: .8em!important
-        left: -10em!important
+        // left: -10em!important
+        text-transform: uppercase
+      .navbar-nav
+        background-color: rgba(209, 228, 249, 0.56)
+        border-radius: 2px
     #services
       .col-services
         .col-xs-12
