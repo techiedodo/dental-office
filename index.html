@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" TechieDodo>
-  <meta name="description" Chatsworth Dental Group remains an industry leader. Using the most innovative technology and procedures, we ensure the highest quality of work for all of our patients.>
+  <meta name="author" content="TechieDodo">
+  <meta name="description" content="Chatsworth Dental Group remains an industry leader. Using the most innovative technology and procedures, we ensure the highest quality of work for all of our patients.">
   <title>Chatsworth Dental Group</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Catamaran:500|Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
@@ -13,9 +13,20 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles/styles.min.css">
+
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/toothfavicon.ico" />
 </head>
 
 <body data-spy='scroll' data-target='#dental-navbar-collapse'>
+  <div class="social-media">
+    <ul>
+      <li class="box" id="facebook"><a href="https://www.facebook.com/chatsworthdentalgroup/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li class="box" id="yelp"><a href="https://www.yelp.com/biz/chatsworth-dental-group-chatsworth"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+      <li class="box" id="twitter"><a href="https://twitter.com/chatsworthdent"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li class="box" id="youtube"><a href="https://www.youtube.com/channel/UCZQnpdxEELO_DPZkkT8S2Pw"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
   <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
     <div class="wrapper">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,9 +38,10 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <span>
+          <!-- <span>
             <img id="logo" alt="Brand" src="./images/dental-office.png"><span id="brand-name">Chatsworth Dental Group</span>
-          </span>
+          </span> -->
+          <span id="brand-name">Chatsworth Dental Group</span>
         </a>
       </div>
 
@@ -108,7 +120,7 @@
         <div class="row">
           <h3 class="text-center text-uppercase content-title">Services</h3>
           <div class="col-md-12">
-            <p class="text-justify">A standard of excellence in personalized dental care enables us to provide the quality dental services our patients deserve. We provide comprehensive treatment planning and use restorative and cosmetic dentistry to achieve your optimal dental health. We are a dental practice devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that will result in beautiful, long lasting smiles!</p>
+            <p class="text-justify">A standard of excellence in personalized dental care enables us to provide the quality dental services you deserve. We provide comprehensive treatment planning and use restorative and cosmetic dentistry to achieve your optimal dental health. We are a dental practice devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that will result in beautiful, long lasting smiles!</p>
           </div>
         </div>
         <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-services">
@@ -119,7 +131,7 @@
                   <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
                 </div>
                 <div class="col-xs-12 col-sm-10 col-md-10">
-                  <p><span>Prevention:</span> Cleaning, Fluoride Treatments, etc.</p>
+                  <p><span>Implants:</span> Provide a strong foundation for fixed or removable replacement teeth that are made to match your natural teeth.</p>
                 </div>
               </div>
             </div>
@@ -131,7 +143,19 @@
                   <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
                 </div>
                 <div class="col-xs-12 col-sm-10 col-md-10">
-                  <p><span>Restoration:</span> Fillings, Crowns, Veneers, etc.</p>
+                  <p><span>Sleep Apnea Treatment:</span> Minimally invasive devices designed to treat sleep and breathing disorders such as snoring and sleep apnea.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default list-services">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+                  <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                  <p><span>Cosmetic Dentistry:</span> Dentistry aimed at creating a positive change to your teeth and to your smile.</p>
                 </div>
               </div>
             </div>
@@ -145,7 +169,7 @@
                   <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
                 </div>
                 <div class="col-xs-12 col-sm-10 col-md-10">
-                  <p><span>Cosmetic:</span> Whitening, Cosmetic Fillings, etc.</p>
+                  <p><span>Dental CT:</span> Used to produce three dimensional (3-D) images of teeth, soft tissues, nerve pathways and bone in a single scan.</p>
                 </div>
               </div>
             </div>
@@ -157,7 +181,19 @@
                   <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
                 </div>
                 <div class="col-xs-12 col-sm-10 col-md-10">
-                  <p><span>Endodontics:</span> Root Canal Therapy, etc.</p>
+                  <p><span>Laser Dentristry:</span> Used for surgery, some to cure restorative materials and enhance tooth bleaching, and others to remove tooth structure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default list-services">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+                  <img src="./images/tooth-logo.png" alt="Tooth Heart" class="tooth-heart">
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                  <p><span>Oral Surgery:</span> Focus in treating many diseases, injuries and defects in hard and soft tissues of the mouth.</p>
                 </div>
               </div>
             </div>
@@ -203,7 +239,7 @@
           <div class="row">
             <div class="col-md-12">
               <h3 class="text-uppercase content-title">What makes us different?</h3>
-              <p>As a full service dental practice, Chatsworth Dental Group remains an industry leader. Our mission is to help our patients live healthier lives. We provide a nurturing environment where your health and comfort is of primary importance. Our highly trained staff develops a custom plan catered to your dental needs.</p>
+              <p class="text-justify">As a full service dental practice, Chatsworth Dental Group remains an industry leader. Our mission is to help you live a healthier live. We provide a nurturing environment where your health and comfort is of primary importance. Our highly trained staff will develop a custom plan that caters to your dental needs.</p>
             </div>
           </div>
           <hr>
@@ -213,7 +249,8 @@
             </div>
             <div class="col-sm-8 col-md-8">
               <h4><u>Dr. Vikram Mishra DDS</u></h4>
-              <p class="text-justify">Dr.Vikram Mishra graduated dentistry in 1995. He received his special training in cosmetic dentistry from UCLA in 2005. He completed his dental implant training in 2006 and received his fellowship award from international congress of oral implantology. His philosophy is to give smile back to people what they deserve. Dr. Mishra fuses his experience in cosmetic dentistry with his skill in dental implant surgery to produce total rehabilitation of oral care. He is becoming popular among patients and community for personable personality and gentle touch in dentistry.</p>
+              <p class="text-justify">Dr. Vikram Mishra obtained his degree in Dentistry in 1995. He received specialized training in cosmetic dentistry from UCLA in 2005. He completed his dental implant training in 2006 and received his fellowship award from international congress of oral implantology.
+                <br>His philosophy is to give his patients back the smile they deserve. Dr. Mishra fuses his experience in cosmetic dentistry with his skill in dental implant surgery to produce total rehabilitation of oral care. He is becoming popular among patients and community for personable personality and gentle touch in dentistry.</p>
             </div>
           </div>
         </div>
@@ -224,7 +261,7 @@
         <div class="col-sm-7 col-md-7 contact-section">
           <h2 class="text-uppercase">New Patients</h2>
           <p>As part of our commitment to providing you with the highest quality care, we value your time and want your time with us to go as smoothly as possible. In addition to finding a map and directions, our office hours, and payment policies, you can complete our online forms at home before your visit to minimize your wait time.
-            <br>To help ensure that all of our patients are making informed decisions about their health, all new patients will receive a comprehensive oral exam and, at that time, Dr. Mishra will discuss any orthodontic treatments he believes may be beneficial.</p>
+            <br>To help ensure that all of our patients are making informed decisions about their health, all new patients will receive a comprehensive oral exam and, at that time, Dr. Mishra will discuss the best dental treatments he believes may be beneficial.</p>
           <h3>New Patient Forms</h3>
           <a href="./download/new-patient-form.pdf" class="btn btn-info" download>Patient Registration Form</a>
           <p>For questions about our patient information forms, please contact us and we will happily answer any questions you may have.</p>
@@ -267,12 +304,15 @@
             <br> Phone: (818) 709-1200</p>
         </div>
         <div class="col-xs-6 col-sm-3 col-md-3">
-          <p>Office Hours: Monday-Saturday 8am-5pm</p>
+          <ul>Office Hours:
+            <li>Monday-Saturday 8:30am-5:30pm</li>
+            <li>Saturday: By Appointment Only</li>
+          </ul>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
           <ul>
             <i><img src="./images/AAD.png" alt="American Academy of Cosmetic Dentistry" /></i>
-            <i><img src="./images/AGD.png" alt="Academy of General Dentistry" /></i>
+            <i><img src="./images/A-D-A.png" alt="American Dental Association" /></i>
             <i><img src="./images/CDA.png" alt="California Dental Association" /></i>
             <i><img src="./images/ICOI.png" alt="International Congress of Oral Implantologists" /></i>
           </ul>
