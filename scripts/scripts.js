@@ -25,7 +25,6 @@ $(document).ready(function() {
         };
     });
 
-
     $('body').scrollspy({
         target: '#dental-navbar-collapse',
         offset: 100
@@ -48,3 +47,21 @@ $(document).ready(function() {
         };
     });
 });
+
+function initMap() {
+    var myLatLng = {
+        lat: 34.257012,
+        lng: -118.604081
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Chatsworth Dental Group'
+    });
+}
