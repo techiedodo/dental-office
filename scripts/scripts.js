@@ -56,7 +56,10 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
-        center: myLatLng
+        center: myLatLng,
+        mapTypeControl: true,
+        zoomControl: true,
+        streetViewControl: true
     });
 
     var marker = new google.maps.Marker({
