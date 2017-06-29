@@ -148,6 +148,10 @@ body
           size: cover
         height: 80vh
       .image-3
+        background: url(../images/Smiling-Woman.jpg) no-repeat center center
+          size: cover
+        height: 80vh
+      .image-4
         background: url(../images/Happy_Couple.jpg) no-repeat center center
           size: cover
         height: 80vh
@@ -239,6 +243,26 @@ body
             padding: 0 .5em
           span
             font-size: 1.2em
+      // services page
+      #all-on-4-main
+        padding: 1em 0em 5em 0em
+        #dentures
+          margin: 0 auto
+          border: 1px solid gray
+            radius: 5px
+          box-shadow: 0px 10px 30px rgb(5,5,5)
+      #all-on-4
+        background: linear-gradient(to top right, rgba(252, 252, 252, 0.9), rgba(252, 252, 252, 0.9)),  url(../images/smiling_people.jpg)
+          // size: cover
+          attachment: fixed
+        color: #015196
+        background-color: white
+        padding: 3.5em 0em
+        a
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          margin-top: 2em
     #team
       color: white
       padding-bottom: 4em
@@ -267,6 +291,9 @@ body
         &.is-showing
           opacity: 1
           transform: translateY(0px)
+  #footer
+    margin-left: 0
+    margin-right: 0
   footer
     color: white
     margin-top: 3.25em
@@ -379,6 +406,9 @@ body
           padding-left: 10px
           p
             font-size: .9em
+      #all-on-4 p, #all-on-4-main p
+        padding-left: 1em
+        padding-right: 1em
 
 @media screen and (max-height: 415px)
   hr
@@ -398,6 +428,9 @@ body
         p
           font-size: .9em
           text-align: center
+      #all-on-4 p, #all-on-4-main p
+        padding-left: 1em
+        padding-right: 1em
 
 @media screen and (max-width: 767px)
   #main-nav
